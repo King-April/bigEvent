@@ -39,6 +39,7 @@ $(function () {
   $('#form_reg').on('submit',function (ev) {
     ev.preventDefault()
     $.post('/api/reguser', 
+    
     {
       username: $('.reg-box [name=username]').val(),
       password: $('.reg-box [name=password]').val()
