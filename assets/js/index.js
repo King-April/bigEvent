@@ -16,7 +16,7 @@ $(function () {
   })
 
 
-
+})
   function getUserInfo() {
     $.ajax({
       method: 'GET',
@@ -25,7 +25,7 @@ $(function () {
         if(res.status !== 0) {
           return layui.layer.msg('获取用户信息失败')
         }
-        console.log(res);
+        // console.log(res);
         renderAvater(res.data)
       }
     })
@@ -46,4 +46,4 @@ $(function () {
       $('.text-avatar').html(first).show()
     }
   }
-})
+
